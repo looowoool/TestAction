@@ -90,6 +90,10 @@ public class XMLUtil {
             byType = ByType.name;
         } else if (type.equalsIgnoreCase("className")) {
             byType = ByType.className;
+        } else if (type.equalsIgnoreCase("linkText")){
+            byType = ByType.linkText;
+        } else if (type.equalsIgnoreCase("by")){
+            byType = ByType.by;
         }
         return byType;
     }

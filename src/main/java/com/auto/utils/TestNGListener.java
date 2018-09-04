@@ -22,13 +22,13 @@ public class TestNGListener extends TestListenerAdapter {
 
     @Override
     public void onTestSuccess(ITestResult tr) {
-        LogUtil.info("Test Success");
+        LogUtil.getLog4jUtil().info("Test Success");
         super.onTestSuccess(tr);
     }
 
     @Override
     public void onTestFailure(ITestResult tr) {
-        LogUtil.error("Test Failure");
+        LogUtil.getLog4jUtil().error("Test Failure");
         super.onTestFailure(tr);
         ScreenShot screenShot = new ScreenShot(driver);
         //获取当前project目录
@@ -42,19 +42,19 @@ public class TestNGListener extends TestListenerAdapter {
 
     @Override
     public void onTestSkipped(ITestResult tr) {
-        LogUtil.error("Test Skipped");
+        LogUtil.getLog4jUtil().error("Test Skipped");
         super.onTestSkipped(tr);
     }
 
     @Override
     public void onStart(ITestContext testContext) {
-        LogUtil.info("Test Start");
+        LogUtil.getLog4jUtil().info("Test Start");
         super.onStart(testContext);
     }
 
     @Override
     public void onFinish(ITestContext testContext) {
-        LogUtil.info("Test Finish");
+        LogUtil.getLog4jUtil().info("Test Finish");
         super.onFinish(testContext);
     }
 

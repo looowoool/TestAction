@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+    <page pageName="BannerList">
+        <!--Locator lists -->
+        <locator type="linkText" timeOut="3" value="首页">室内装修效果图在线设计-酷家乐</locator>
+        <locator type="linkText" timeOut="3" value="视频教程">免费室内设计在线学习视频教程_酷家乐大学0</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[2]/div/ul/li[1]/a">免费室内设计在线学习视频教程_酷家乐大学1</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[2]/div/ul/li[2]/a">酷家乐 - 云设计帮助中心</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[2]/div/ul/li[3]/a">户型工具-酷家乐</locator>
+        <locator type="linkText" timeOut="3" value="优秀设计">2018全国装修设计方案大全_装修效果图大全_酷家乐0</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[3]/div/ul/li[1]/a">2018全国装修设计方案大全_装修效果图大全_酷家乐1</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[3]/div/ul/li[2]/a">设计大赛_碰撞思想，专注设计</locator>
+        <locator type="linkText" timeOut="3" value="模型库">模型库_酷家乐云设计</locator>
+        <locator type="linkText" timeOut="3" value="户型库">户型图大全_房型图大全 _酷家乐</locator>
+        <locator type="linkText" timeOut="3" value="到店购">到店购 品牌商和设计师的互动平台 酷家乐 新零售 到店购</locator>
+        <locator type="linkText" timeOut="3" value="软件下载">酷家乐装修设计软件下载_官方软件下载_酷家乐0</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[8]/div/ul/li[1]/a">酷家乐装修设计软件下载_官方软件下载_酷家乐1</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[8]/div/ul/li[2]/a">App下载0</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[8]/div/ul/li[3]/a">KoolVR客户端下载_酷家乐</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[8]/div/ul/li[4]/a">酷咖名片，设计师的销售利器_酷家乐</locator>
+        <locator type="linkText" timeOut="3" value="找设计师">室内装修效果图在线设计-酷家乐0</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[9]/div/ul/li[1]/a">App下载1</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[9]/div/ul/li[2]/a">室内装修效果图在线设计-酷家乐1</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[9]/div/ul/li[3]/a">全国户型改造_酷家乐</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[9]/div/ul/li[4]/a">全国装修答疑_酷家乐</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[9]/div/ul/li[5]/a">全国装修日记_酷家乐</locator>
+        <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[9]/div/ul/li[6]/a">全国装修攻略_酷家乐</locator>
+        <locator type="linkText" timeOut="3" value="企业版">企业版首页</locator>
+
+        <locator type="xpth" timeOut="3" value="/html/body/div[7]/div[2]/div[1]/i">提示框</locator>
+    </page>
+
+</map>

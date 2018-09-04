@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
 
-    <parameter name="browserDriverUrl" value="\resources\driverExe\chromedriver.exe"/>
+    <parameter name="browserDriverUrl" value="C:\Users\admin\Desktop\code\TestAction\src\main\resources\driverExe\chromedriver.exe"/>
     <parameter name="url" value="https://beta.kujiale.com"/>
     <test verbose="2" name="BannerTest">
         <classes>

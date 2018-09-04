@@ -32,9 +32,14 @@ public class BannerTest {
 
     @Test
     public void click(){
+
         banner.click("室内装修效果图在线设计-酷家乐");
 
         banner.click("免费室内设计在线学习视频教程_酷家乐大学0");
+
+        if (banner.isElementDisplayed("提示框")){
+            banner.click("提示框");
+        }
 
         action.clickAndHold(banner.getElement("免费室内设计在线学习视频教程_酷家乐大学0")).build().perform();
         banner.waitElement(banner.getLocator("免费室内设计在线学习视频教程_酷家乐大学0"));

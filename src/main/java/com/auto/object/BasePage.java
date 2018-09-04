@@ -24,8 +24,8 @@ public class BasePage extends UIExecutorImpl {
         this.driver = driver;
         this.pageName = pageName;
         // 获取page.xml路径，page.xml在同级目录
-        xmlPath = this.getClass().getResource("").getPath() + "page.xml";
-        LogUtil.info(xmlPath + pageName);
+        xmlPath = this.getClass().getResource("").getPath() + "data.xml";
+        LogUtil.info(xmlPath + ":" +pageName);
         locatorMap = XMLUtil.readXMLDocument(xmlPath, pageName);
     }
 
