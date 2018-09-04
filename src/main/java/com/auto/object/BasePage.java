@@ -2,6 +2,7 @@ package com.auto.object;
 
 import java.util.HashMap;
 
+import com.auto.utils.LogUtil;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -24,6 +25,7 @@ public class BasePage extends UIExecutorImpl {
         this.pageName = pageName;
         // 获取page.xml路径，page.xml在同级目录
         xmlPath = this.getClass().getResource("").getPath() + "page.xml";
+        LogUtil.info(xmlPath + pageName);
         locatorMap = XMLUtil.readXMLDocument(xmlPath, pageName);
     }
 

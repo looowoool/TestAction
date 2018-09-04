@@ -1,6 +1,8 @@
 package com.auto.utils;
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -15,7 +17,6 @@ import com.auto.object.Locator;
  */
 public class UIExecutorImpl implements UIExecutor {
     private WebDriver driver;
-    public LogUtil log;
 
     public UIExecutorImpl(WebDriver driver) {
         this.driver = driver;
@@ -92,7 +93,7 @@ public class UIExecutorImpl implements UIExecutor {
     }
 
     /**
-     * 元素是否显式显示
+     * 元素是否显示
      *
      */
     @Override
@@ -140,7 +141,39 @@ public class UIExecutorImpl implements UIExecutor {
     @Override
     public void waitElement(Locator locator) {
         // TODO Auto-generated method stub
-
+        try {
+            Thread.sleep(locator.getWaitSec()*500);
+        } catch (InterruptedException e) {
+            LogUtil.error(e.getMessage());
+        }
     }
+
+    /**
+     * 回到第一个标签
+     */
+    @Override
+    public void toFirstLabel() {
+        Set<String> winHandels = driver.getWindowHandles(); // 得到当前窗口的set集合
+        List<String> it = new ArrayList<String>(winHandels); // 将set集合存入list对象
+        driver.switchTo().window(it.get(0));
+    }
+
+    /**
+     * @return 得到标题
+     */
+    @Override
+    public String getTitle() {
+        return driver.getTitle();
+    }
+
+    /**
+     *
+     * @return 得到网址
+     */
+    @Override
+    public String getUrl() {
+        return driver.getCurrentUrl();
+    }
+
 }
 

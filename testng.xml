@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/admin/Desktop/code/TestAction">
+
+    <parameter name="browserDriverUrl" value="\resources\driverExe\chromedriver.exe"/>
+    <parameter name="url" value="https://beta.kujiale.com"/>
+    <test verbose="2" name="BannerTest">
         <classes>
-            <class name="com.auto.Mytestcase001">
-                <methods>
-                    <include name="testcase1"/>
-                    <include name="testcase2"/>
-                </methods>
+            <class name="com.auto.tastcase.BannerTest">
+                <!--<methods>-->
+                    <!--<include name="testcase1"/>-->
+                    <!--<include name="testcase2"/>-->
+                <!--</methods>-->
             </class>
         </classes>
     </test>
+
+    <!--<parameter name="username" value="li"/>-->
+    <!--<parameter name="pwd" value="123456"/>-->
+    <!--<parameter name="browserDriverUrl" value="D:\work\workplace\webUITest\browserDriver\chromedriver.exe"/>-->
+    <!--<parameter name="url" value="http://XXXXX/login.html"/>-->
+    <!--<test name="test">-->
+        <!--<classes>-->
+            <!--<class name="com.auto.tastcase.LoginTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
 </suite>
+

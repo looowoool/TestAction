@@ -23,6 +23,12 @@ public interface UIExecutor {
     public void switchWindow(String title);
     //切换frame
     public void switchFrame(Locator locator);
+    //回到第一个标签
+    public void toFirstLabel();
+    //得到标题
+    public String getTitle();
+    //得到网址
+    public String getUrl();
     //智能等待
     public void waitElement(Locator locator);
 }
