@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
-    <page pageName="BannerList">
+    <page pageName="Banner">
         <!--Locator lists -->
         <locator type="linkText" timeOut="3" value="首页">室内装修效果图在线设计-酷家乐</locator>
         <locator type="linkText" timeOut="3" value="视频教程">免费室内设计在线学习视频教程_酷家乐大学0</locator>
@@ -26,6 +26,8 @@
         <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[9]/div/ul/li[5]/a">全国装修日记_酷家乐</locator>
         <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[9]/div/ul/li[6]/a">全国装修攻略_酷家乐</locator>
         <locator type="linkText" timeOut="3" value="企业版">企业版首页</locator>
+
+        <locator type="xpth" timeOut="3" value="/html/body/div[7]/div[2]/div[1]/i">提示框</locator>
     </page>
 
 </map>
