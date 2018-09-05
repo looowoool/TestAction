@@ -11,7 +11,7 @@
         <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[3]/div/ul/li[1]/a">2018全国装修设计方案大全_装修效果图大全_酷家乐1</locator>
         <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[3]/div/ul/li[2]/a">设计大赛_碰撞思想，专注设计</locator>
         <locator type="linkText" timeOut="3" value="模型库">模型库_酷家乐云设计</locator>
-        <locator type="linkText" timeOut="3" value="户型库">户型图大全_房型图大全 _酷家乐</locator>
+        <locator type="linkText" timeOut="3" value="户型库">杭州户型图大全_房型图大全 _酷家乐</locator>
         <locator type="linkText" timeOut="3" value="到店购">到店购 品牌商和设计师的互动平台 酷家乐 新零售 到店购</locator>
         <locator type="linkText" timeOut="3" value="软件下载">酷家乐装修设计软件下载_官方软件下载_酷家乐0</locator>
         <locator type="xpth" timeOut="3" value="//*[@id=&quot;header&quot;]/div/div/div[2]/ul/li[8]/div/ul/li[1]/a">酷家乐装修设计软件下载_官方软件下载_酷家乐1</locator>

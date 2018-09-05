@@ -6,7 +6,7 @@ import com.auto.utils.TestNGListener;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
-@Listeners({TestNGListener.class})
+//@Listeners({TestNGListener.class})
 public class BannerTest {
 
     private WebDriver driver;
@@ -60,7 +60,7 @@ public class BannerTest {
 
         banner.click("模型库_酷家乐云设计",false);
 
-        banner.click("户型图大全_房型图大全 _酷家乐",false);
+        banner.click("杭州户型图大全_房型图大全 _酷家乐",false);
 
         banner.click("到店购 品牌商和设计师的互动平台 酷家乐 新零售 到店购",true);
 
