@@ -86,6 +86,9 @@ public class UIExecutorImpl implements UIExecutor {
             case linkText:
                 element = driver.findElement(By.linkText(address));
                 break;
+            case name:
+                element = driver.findElement(By.name(address));
+                break;
             default:
                 break;
         }

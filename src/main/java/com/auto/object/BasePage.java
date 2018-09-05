@@ -15,18 +15,28 @@ import com.auto.utils.XMLUtil;
  */
 public class BasePage extends UIExecutorImpl {
     protected WebDriver driver;
-    protected String pageName;// 页面名称
+    protected String resourcesName;// 页面名称
     protected String xmlPath;// 页面元素配置文件路径
     protected HashMap<String, Locator> locatorMap;//存储页面元素信息
 
-    public BasePage(WebDriver driver, String pageName) throws Exception {
+    public BasePage(WebDriver driver, String resourcesName) throws Exception {
         super(driver);
         this.driver = driver;
-        this.pageName = pageName;
+        this.resourcesName = resourcesName;
         // data.xml路径，data.xml在同级目录
-        xmlPath = this.getClass().getClassLoader().getResource("").getPath() + pageName +".xml";
-        LogUtil.info(xmlPath + ":" +pageName);
-        locatorMap = XMLUtil.readXMLDocument(xmlPath, pageName);
+        xmlPath = this.getClass().getClassLoader().getResource("").getPath() + resourcesName +".xml";
+        LogUtil.info(xmlPath + ";resourcesName=" +resourcesName);
+        locatorMap = XMLUtil.readXMLDocument(xmlPath, resourcesName);
+    }
+
+    public BasePage(WebDriver driver, String resourcesName,String locatorName) throws Exception {
+        super(driver);
+        this.driver = driver;
+        this.resourcesName = resourcesName;
+        // data.xml路径，data.xml在同级目录
+        xmlPath = this.getClass().getClassLoader().getResource("").getPath() + resourcesName +".xml";
+        LogUtil.info(xmlPath + ";resourcesName=" +resourcesName + ";locatorName=" + locatorName);
+        locatorMap = XMLUtil.readXMLDocument(xmlPath, locatorName);
     }
 
     public void click(String locatorName) {

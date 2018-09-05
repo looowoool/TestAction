@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--by, xpath, linkText, id, name, className-->
+<map>
+
+    <page pageName="Login">
+        <!--Locator lists -->
+        <locator type="name" timeOut="30" value="account">登录输入账号框</locator>
+        <locator type="name" timeOut="30" value="password">登录输入密码框</locator>
+        <locator type="linkText" timeOut="30" value="登录">登录框</locator>
+        <locator type="xpath" timeOut="30" value="/html/body/div[7]/div[1]/div[3]/span">关闭登录框</locator>
+        <locator type="xpath" timeOut="30" value="/html/body/div[7]/div[1]/div[2]/div[2]/div[2]/div[1]/span">登录</locator>
+        <locator type="xpath" timeOut="30" value="//*[@id=&quot;header&quot;]/div/div/div[4]/ul/li[3]/a/span">开始设计</locator>
+    </page>
+
+    <!--<page pageName="minePage">-->
+        <!--&lt;!&ndash;Locator lists &ndash;&gt;-->
+        <!--<locator type="id" timeOut="3" value="icon_user">用户头像</locator>-->
+        <!--<locator type="id" timeOut="3" value="user_name">用户名</locator>-->
+    <!--</page>-->
+
+    <page pageName="loginError">
+        <!--Locator lists -->
+        <locator type="xpth" timeOut="30" value=" /html/body/div[7]/div[1]/div[2]/div[2]/div[2]/form/div[1]/div[2]/span[3]">账号错误提示</locator>
+        <locator type="xpth" timeOut="30" value="/html/body/div[7]/div[1]/div[2]/div[2]/div[2]/form/div[2]/div[2]/span[3]">密码错误提示</locator>
+    </page>
+
+</map>

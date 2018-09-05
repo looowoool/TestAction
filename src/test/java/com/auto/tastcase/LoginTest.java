@@ -18,11 +18,13 @@ import com.auto.utils.TestNGListener;
 
 @Listeners({TestNGListener.class})
 public class LoginTest {
+
     private WebDriver driver;
     private Login login;
+
     @DataProvider(name = "loginParams")
     public Object[][] loginParams(){
-        return new Object[][]{{"li","1111","用户名或密码错误"},{"li","","请输入登录密码！"},{"","123456","请输入登录账户！"}};
+        return new Object[][]{{"13003697518","","请输入密码"},{"","12345678a","请输入邮箱或者手机号"},{"13003697518","12345678aaaa","账号密码错误"}};
     }
 
     @BeforeClass
@@ -33,6 +35,7 @@ public class LoginTest {
         //driver = new HtmlUnitDriver();
         driver.get(url);
     }
+
     @BeforeMethod
     public void BeforeMethod(){
         login = new Login(driver);
@@ -42,18 +45,22 @@ public class LoginTest {
 
     @Test(dataProvider = "loginParams",description = "异常用户信息登录")
     public void login02(String username,String pwd,String expectedTip) throws Exception{
-        login.login(username, pwd);
-        String tip = new BasePage(driver, "loginPage").getText("错误提示");
+        login.login(username, pwd,"Login");
+        String tip;
+        if (null == username) {
+            tip = new BasePage(driver,"Login" ,"loginError").getText("账号错误提示");
+        }else {
+            tip = new BasePage(driver, "Login","loginError").getText("密码错误提示");
+        }
         Assert.assertEquals(tip, expectedTip);
     }
 
     @Test(dependsOnMethods = "login02",description = "正常用户登录")
     @Parameters({ "username", "pwd" })
     public void login(String username,String pwd) throws Exception {
-        login.login(username, pwd);
-        String tip = new BasePage(driver, "mainPage").getText("客服热线");
-        Assert.assertEquals(tip, "客服热线：0755-2309674");
-
+        login.login(username, pwd,"Login");
+        String tip = new BasePage(driver, "Login").getText("开始设计");
+        Assert.assertEquals(tip, "开始设计");
     }
 
 

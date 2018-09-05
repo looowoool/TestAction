@@ -6,7 +6,7 @@ import com.auto.utils.TestNGListener;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
-//@Listeners({TestNGListener.class})
+@Listeners({TestNGListener.class})
 public class BannerTest {
 
     private WebDriver driver;
