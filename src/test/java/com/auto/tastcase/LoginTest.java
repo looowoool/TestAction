@@ -47,11 +47,13 @@ public class LoginTest {
     public void login02(String username,String pwd,String expectedTip) throws Exception{
         login.login(username, pwd,"Login");
         String tip;
-        if (null == username) {
+        if (username.equals("") || username == null) {
             tip = new BasePage(driver,"Login" ,"loginError").getText("账号错误提示");
         }else {
             tip = new BasePage(driver, "Login","loginError").getText("密码错误提示");
         }
+        login.close();
+        Thread.sleep(1000);
         Assert.assertEquals(tip, expectedTip);
     }
 

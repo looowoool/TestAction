@@ -2,28 +2,28 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
 
-    <!--<listeners>-->
-        <!--<listener class-name="com.auto.utils.TestNGListener"/>-->
-    <!--</listeners>-->
+    <listeners>
+        <listener class-name="com.auto.utils.TestNGListener"/>
+    </listeners>
 
-    <!--<parameter name="browserDriverUrl" value="C:\Users\admin\Desktop\code\TestAction\src\main\resources\driverExe\chromedriver.exe"/>-->
-    <!--<parameter name="url" value="https://beta.kujiale.com"/>-->
-    <!--<test verbose="2" name="BannerTest">-->
-        <!--<classes>-->
-            <!--<class name="com.auto.tastcase.BannerTest">-->
-                <!--&lt;!&ndash;<methods>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<include name="testcase1"/>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<include name="testcase2"/>&ndash;&gt;-->
-                <!--&lt;!&ndash;</methods>&ndash;&gt;-->
-            <!--</class>-->
-        <!--</classes>-->
-    <!--</test>-->
+    <parameter name="browserDriverUrl" value="C:\Users\admin\Desktop\code\TestAction\src\main\resources\driverExe\chromedriver.exe"/>
+    <parameter name="url" value="https://beta.kujiale.com"/>
+    <test name="BannerTest" verbose="2">
+        <classes>
+            <class name="com.auto.tastcase.BannerTest">
+                <!--<methods>-->
+                    <!--<include name="testcase1"/>-->
+                    <!--<include name="testcase2"/>-->
+                <!--</methods>-->
+            </class>
+        </classes>
+    </test>
 
     <parameter name="username" value="13003697518"/>
     <parameter name="pwd" value="12345678a"/>
     <parameter name="browserDriverUrl" value="C:\Users\admin\Desktop\code\TestAction\src\main\resources\driverExe\chromedriver.exe"/>
     <parameter name="url" value="https://beta.kujiale.com/"/>
-    <test name="test">
+    <test name="LoginTest" verbose="2">
         <classes>
             <class name="com.auto.tastcase.LoginTest"/>
         </classes>

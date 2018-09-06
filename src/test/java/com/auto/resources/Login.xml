@@ -20,7 +20,7 @@
 
     <page pageName="loginError">
         <!--Locator lists -->
-        <locator type="xpth" timeOut="30" value=" /html/body/div[7]/div[1]/div[2]/div[2]/div[2]/form/div[1]/div[2]/span[3]">账号错误提示</locator>
+        <locator type="xpth" timeOut="30" value="/html/body/div[7]/div[1]/div[2]/div[2]/div[2]/form/div[1]/div[2]/span[3]">账号错误提示</locator>
         <locator type="xpth" timeOut="30" value="/html/body/div[7]/div[1]/div[2]/div[2]/div[2]/form/div[2]/div[2]/span[3]">密码错误提示</locator>
     </page>
 
