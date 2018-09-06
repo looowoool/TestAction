@@ -8,7 +8,9 @@
 
     <parameter name="browserDriverUrl" value="C:\Users\admin\Desktop\code\TestAction\src\main\resources\driverExe\chromedriver.exe"/>
     <parameter name="url" value="https://beta.kujiale.com"/>
-    <test name="BannerTest" verbose="2">
+
+
+    <test name="Banner" verbose="2">
         <classes>
             <class name="com.auto.tastcase.BannerTest">
                 <!--<methods>-->
@@ -21,9 +23,7 @@
 
     <parameter name="username" value="13003697518"/>
     <parameter name="pwd" value="12345678a"/>
-    <parameter name="browserDriverUrl" value="C:\Users\admin\Desktop\code\TestAction\src\main\resources\driverExe\chromedriver.exe"/>
-    <parameter name="url" value="https://beta.kujiale.com/"/>
-    <test name="LoginTest" verbose="2">
+    <test name="Login" verbose="2">
         <classes>
             <class name="com.auto.tastcase.LoginTest"/>
         </classes>

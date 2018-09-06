@@ -34,7 +34,8 @@ public class BannerTest {
 
         banner.click("免费室内设计在线学习视频教程_酷家乐大学0",false);
 
-        banner.click("提示框",false);
+
+//        banner.click("提示框",false);
 
 
         banner.actionPerform("免费室内设计在线学习视频教程_酷家乐大学0");
